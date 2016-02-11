@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name         Easy Download in H ACG
-// @version      0.2
+// @version      0.3
 // @description  维护网络健康发展:)
 // @author       FeiLong
+// @icon         http://www.hacg.lol/favicon.ico
 // @match        http://www.hacg.lol/wp/*
 // @grant        none
 // @namespace https://greasyfork.org/users/28687
