@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Easy Download in H ACG
-// @version      0.4
+// @version      0.5
 // @description  维护网络健康发展:)
 // @author       FeiLong
 // @icon         http://www.hacg.lol/favicon.ico
@@ -17,6 +17,8 @@
 var b=document.body.innerHTML;
 
 /**********************************************************************************************/
+//auto display
+b=b.replace(/display: none;/g,'display: yes;')
 //magnet
 b=b.replace(/([\w\d]{40})/g, function(word){
   return word.toUpperCase();}
