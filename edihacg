@@ -1,0 +1,27 @@
+// ==UserScript==
+// @name         Easy Download in H ACG
+// @version      0.1
+// @description  维护网络健康发展:)
+// @author       FeiLong
+// @match        http://www.hacg.lol/wp/*
+// @grant        none
+// @namespace https://greasyfork.org/users/28687
+// ==/UserScript==
+/* jshint -W097 */
+'use strict';
+
+// Your code here...
+
+//get web html
+var b=document.body.innerHTML;
+
+/**********************************************************************************************/
+//magnet
+b = b.replace(/([\w\d]{40})/g,'<a href=\"magnet\:\?xt\=urn\:btih\:$1\">magnet\:\?xt\=urn\:btih\:$1<\/a>');
+//pan.baidu
+b = b.replace(/\/s\/([\w\d]{8})/g,'<a href=\"http\:\/\/pan.baidu.com\/s\/$1\">http\:\/\/pan.baidu.com\/s\/$1<\/a>');
+/**********************************************************************************************/
+
+//finish
+document.body.innerHTML = b;
+
