@@ -6,7 +6,7 @@
 // @icon         http://www.hacg.lol/favicon.ico
 // @match        http://www.hacg.lol/wp/*
 // @grant        none
-// @namespace https://greasyfork.org/users/28687
+// @namespace https://greasyfork.org/zh-CN/scripts/16997-easy-download-in-h-acg
 // ==/UserScript==
 /* jshint -W097 */
 'use strict';
