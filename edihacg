@@ -27,7 +27,7 @@ b = b.replace(/([\w\d]{40})/g,'<a target=\"_blank\" href=\"magnet\:\?xt\=urn\:bt
 //pan.baidu
 b = b.replace(/\/s\/([\w\d]{8})/g,'<a target=\"_blank\" href=\"http\:\/\/pan.baidu.com\/s\/$1\">http\:\/\/pan.baidu.com\/s\/$1<\/a>');
 //8 jiang
-b = b.replace(/([\w\d]{8}) ([^<]+)<br>\n(⑨)/g,'<a href=\"http\:\/\/pan.baidu.com\/s\/$1\">$1<\/a><br>提取码：$2<br>解压密码：$3')
+b = b.replace(/([\w\d]{8}) ([^<]+)<br>\n(⑨)/g,'<a  target=\"_blank\" href=\"http\:\/\/pan.baidu.com\/s\/$1\">$1<\/a><br>提取码：$2<br>解压密码：$3')
 /**********************************************************************************************/
 
 //finish
