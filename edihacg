@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Easy Download in H ACG
-// @version      0.8
+// @version      0.9
 // @description  维护网络健康发展:)
 // @author       FeiLong
 // @icon         http://www.hacg.lol/favicon.ico
@@ -28,6 +28,8 @@ b = b.replace(/([\w\d]{40})/g,'<a target=\"_blank\" href=\"magnet\:\?xt\=urn\:bt
 b = b.replace(/\/s\/([\w\d]{6,8})/g,'<a target=\"_blank\" href=\"http\:\/\/pan.baidu.com\/s\/$1\">http\:\/\/pan.baidu.com\/s\/$1<\/a>');
 //8 jiang
 b = b.replace(/([\w\d]{6,8}) ([^<]+)<br>\n(⑨)/g,'<a  target=\"_blank\" href=\"http\:\/\/pan.baidu.com\/s\/$1\">$1<\/a><br>提取码：$2<br>解压密码：$3')
+b = b.replace(/小8酱/,'<a name=\"little8\">小8酱<\/a>');
+b = b.replace(/发表于/,'<h1><a href=\"#little8\">直达小8酱<\/a><h1>');
 /**********************************************************************************************/
 
 //finish
